@@ -1,6 +1,6 @@
-const tabs = Array.from(document.querySelectorAll('.tab'))
+const tabs = [...document.querySelectorAll('.tab')]
 const tabby = document.querySelector('.tabby')
-const tabContents = Array.from(tabby.querySelectorAll('.tab-content'))
+const tabContents = [...tabby.querySelectorAll('.tab-content')]
 const tabsContainer = tabby.querySelector('.tabs')
 
 const handleTabs = e => {
